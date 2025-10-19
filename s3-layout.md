@@ -1,6 +1,11 @@
-
+sh# mcli ls minio/warehouse/tripdata/tripdata
+```
+[2025-10-19 13:37:03 MSK]     0B data/
+[2025-10-19 13:37:03 MSK]     0B metadata/
+```
 
 sh# mc ls minio/warehouse/tripdata/tripdata/data
+```
 [2025-10-19 06:45:22 UTC]  52MiB STANDARD 00000-1-5ad11515-c3b9-4f6e-a9b7-5fc731b78cc7-0-00001.parquet
 [2025-10-19 06:45:22 UTC]  53MiB STANDARD 00001-2-5ad11515-c3b9-4f6e-a9b7-5fc731b78cc7-0-00001.parquet
 [2025-10-19 06:45:21 UTC]  44MiB STANDARD 00002-3-5ad11515-c3b9-4f6e-a9b7-5fc731b78cc7-0-00001.parquet
@@ -14,11 +19,14 @@ sh# mc ls minio/warehouse/tripdata/tripdata/data
 [2025-10-19 06:45:21 UTC]  37MiB STANDARD 00010-11-5ad11515-c3b9-4f6e-a9b7-5fc731b78cc7-0-00001.parquet
 [2025-10-19 06:45:21 UTC]  36MiB STANDARD 00011-12-5ad11515-c3b9-4f6e-a9b7-5fc731b78cc7-0-00001.parquet
 [2025-10-19 06:45:21 UTC]  32MiB STANDARD 00012-13-5ad11515-c3b9-4f6e-a9b7-5fc731b78cc7-0-00001.parquet
+```
 
 sh# mc ls minio/warehouse/tripdata/tripdata/metadata
+```
 [2025-10-19 06:45:23 UTC] 2.8KiB STANDARD 00000-05d89834-6f51-4b8c-aca9-419859874bdd.metadata.json
 [2025-10-19 06:45:22 UTC]  11KiB STANDARD 6e69660a-ef62-4af6-a5bd-2e782926a8c3-m0.avro
 [2025-10-19 06:45:22 UTC] 4.3KiB STANDARD snap-8368504387769468041-1-6e69660a-ef62-4af6-a5bd-2e782926a8c3.avro
+```
 
 sh# mc cat minio/warehouse/tripdata/tripdata/metadata/00000-05d89834-6f51-4b8c-aca9-419859874bdd.metadata.json
 ```json
