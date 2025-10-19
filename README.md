@@ -84,3 +84,9 @@ For more information on getting started with using Iceberg, checkout
 the [Quickstart](https://iceberg.apache.org/spark-quickstart/) guide in the official docs.
 
 The repository for the docker image is [located on dockerhub](https://hub.docker.com/r/tabulario/spark-iceberg).
+
+---
+
+var df = spark.read.parquet("/home/iceberg/data")
+df.write.saveAsTable("tripdata.tripdata")
+
