@@ -87,6 +87,8 @@ The repository for the docker image is [located on dockerhub](https://hub.docker
 
 ---
 
+## Load example data
+```
 var df = spark.read.parquet("/home/iceberg/data")
 df.write.saveAsTable("tripdata.tripdata")
-
+```
