@@ -91,4 +91,7 @@ The repository for the docker image is [located on dockerhub](https://hub.docker
 ```
 var df = spark.read.parquet("/home/iceberg/data")
 df.write.saveAsTable("tripdata.tripdata")
+
+val df = spark.read.format("csv").option("header", "true").option("inferSchema", "true").load("/price_paid_records.csv")
+df.write.saveAsTable("tripdata.pricepaid")
 ```
